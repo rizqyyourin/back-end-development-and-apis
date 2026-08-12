@@ -61,6 +61,14 @@ Once your server is running, open `http://localhost:3001` in a browser to use th
 
 **NOTE:** Click _Run Tests_ only after starting the server with `npm start`.
 
+### --before-each--
+
+```js
+globalThis.WebSocket = (
+  await import(`${ROOT}/build-a-chat-app/node_modules/ws/index.js`)
+).default;
+```
+
 ### --hints--
 
 #### 0
@@ -103,12 +111,12 @@ A WebSocket client should be able to connect to the server.
 
 ```js
 await new Promise((resolve, reject) => {
-  const WebSocket = new WebSocket("ws://localhost:3001?username=Tester");
-  WebSocket.once("open", () => {
-    WebSocket.close();
+  const __ws = new WebSocket("ws://localhost:3001?username=Tester");
+  __ws.once("open", () => {
+    __ws.close();
     resolve();
   });
-  WebSocket.once("error", (err) =>
+  __ws.once("error", (err) =>
     reject(new Error(`WebSocket connection failed: ${err.message}`)),
   );
   setTimeout(() => reject(new Error("WebSocket connection timed out")), 3000);
