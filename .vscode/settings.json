@@ -14,11 +14,11 @@
     "package-lock.json": true,
     "package.json": true,
     "README.md": true,
-    "build-a-timestamp-microservice": true,
+    "build-a-timestamp-microservice": false,
     "build-a-web-server": true,
     "learn-nodejs-repl": true,
     "build-a-case-converter": true,
-    "build-a-prime-number-checker-module": false,
+    "build-a-prime-number-checker-module": true,
     "build-a-file-processor": true,
     "build-a-family-movie-watchlist-api": true,
     "build-a-random-joke-app": true,
@@ -42,7 +42,7 @@
       "open": true,
       "showLoader": true,
       "timeout": 4000,
-      "url": "https://miniature-succotash-94wv45v695j3pg45-8080.app.github.dev"
+      "url": "https://fluffy-winner-rvw9v69749gf57p-8080.app.github.dev"
     }
   ],
   "terminal.integrated.defaultProfile.linux": "bash",
