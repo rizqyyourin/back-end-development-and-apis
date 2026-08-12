@@ -2,6 +2,11 @@
   "name": "build-a-data-sanitizer",
   "version": "1.0.0",
   "description": "data sanitizer",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "type": "module",
   "license": "BSD-3-Clause",
   "dependencies": {
     "express": "^5.2.1"
